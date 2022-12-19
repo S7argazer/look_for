@@ -35,7 +35,7 @@ if [[ "$MODES" -eq 5 ]];then
    cat ~/.github-secret/secret.txt
    git status
    git add look_for.sh
-   git commit -m "[Updates]"
+   git commit -m "[Updates 2]"
    git push
 fi
 

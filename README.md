@@ -3,7 +3,7 @@ For example, if you have multiple PDF books in a directory, you can save this sc
 ./look_for 4
 ./look_for 1 "Cyber Kill Chain"
 
-./look_for 4 downloads a pre-requecit script needed by this script in order to search through the PDFs.
+./look_for 4 downloads a pre-request script needed by this script in order to search through the PDFs.
 ./look_for 1 "Cyber Kill Chain" will begin searching through those PDFs for anything that says Cyber Kill Chain.
 
 Anything that is found will be stored in the output directory so you can go over them manually to see what the script was able to find.

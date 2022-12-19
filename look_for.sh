@@ -28,6 +28,15 @@
 #               PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 #
 # USAGE:        look_for <mode> <string>
+MODES="$1"
+
+if [[ "$MODES" -eq 5 ]];then
+   echo "Note: This is a developer command used by ONeal to update this script on Github."
+   git status
+   git add look_for.sh
+   git commit -m "[Updates]"
+   git push
+fi
 
 if test -f "developer.txt"; then
     cd ..
@@ -35,7 +44,6 @@ if test -f "developer.txt"; then
     cd WorkingDirectory
 fi
 
-MODES="$1"
 LOOK_FOR="$2"
 RANNUM=$(( ((RANDOM<<15)|RANDOM) % 63001 + 2000 ))
 echo "Looking for $STRING..."
@@ -68,9 +76,6 @@ elif [[ "$MODES" -eq 4 ]];then
        rm extract_pdf_results.sh
        echo "Failed to download extract_pdf_results.sh"
    fi
-   elif [[ "$MODES" -eq 5 ]];then
-   echo "Note: This is a developer command used by ONeal to update this script on Github."
-   
 else
    echo ".\look_for 1 \"Cyber Kill Chain\" - Searches for Cyber within the pdfs in the current directory and saves any finds in the Output directory."
    echo ".\look_for 2 \"Cyber Kill Chain\" - Searches for Kill within the Output directory"

@@ -32,6 +32,7 @@ MODES="$1"
 
 if [[ "$MODES" -eq 5 ]];then
    echo "Note: This is a developer command used by ONeal to update this script on Github."
+   cat ~/.github-secret/secret.txt
    git status
    git add look_for.sh
    git commit -m "[Updates]"

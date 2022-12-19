@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # NAME:         look_for
-# VERSION:      0.1
+# VERSION:      0.2
 # AUTHOR:       (c) 2022 Jeremiah O'Neal
 # DESCRIPTION:  Soon to come.
 # FEATURES:     
